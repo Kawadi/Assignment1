@@ -13,12 +13,17 @@
 
   <div class="field">
     <%= form.label :date %>
-    <%= form.date_select :date, id: :curriculum_date %>
+    <%= form.date_select :date, id: :curriculum_date ,:use_month_numbers => true %>
   </div>
 
   <div class="field">
     <%= form.label :chapter %>
     <%= form.text_field :chapter, id: :curriculum_chapter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comprehension %>
+    <%= form.number_field :comprehension, id: :curriculum_comprehension %>
   </div>
 
   <div class="actions">

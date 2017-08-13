@@ -7,6 +7,7 @@
     <tr>
       <th>Date</th>
       <th>Chapter</th>
+      <th>Comprehension</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= curriculum.date %></td>
         <td><%= curriculum.chapter %></td>
+        <td><%= curriculum.comprehension %>%</td>
         <td><%= link_to 'Show', curriculum %></td>
         <td><%= link_to 'Edit', edit_curriculum_path(curriculum) %></td>
         <td><%= link_to 'Destroy', curriculum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
